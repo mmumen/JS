@@ -16,4 +16,10 @@ test('remove user to userController', () => {
     expect(userController.users).not.toContain(user);
   });
 
+test('verify before adding a user', () => {
+    let user = new User(2345,"Mohamed", "mohamed@generation.org");
+    expect(usercontroller.getUsers()).not.toContain(user);
+    userController.add(user); 
+});
 
+test('verification controluser before removing', ( =>) )
